@@ -5,37 +5,31 @@ answer:
   - id: (Sample) Retail - Apparel
     name: (Sample) Retail - Apparel
     fqn: cd252e5c-b552-49a8-821d-3eadaa049cca
-  search_query: "[quantity purchased] [city] [sales]"
+  search_query: "[quantity purchased] [city]"
   answer_columns:
-  - name: Total quantity purchased
   - name: city
-  - name: Total sales
+  - name: Total quantity purchased
   table:
     table_columns:
     - column_id: city
       show_headline: false
     - column_id: Total quantity purchased
       show_headline: false
-    - column_id: Total sales
-      show_headline: false
     ordered_column_ids:
     - city
     - Total quantity purchased
-    - Total sales
     client_state: ""
     client_state_v2: "{\"tableVizPropVersion\": \"V1\"}"
   chart:
     type: COLUMN
     chart_columns:
-    - column_id: city
     - column_id: Total quantity purchased
-    - column_id: Total sales
+    - column_id: city
     axis_configs:
     - x:
       - city
       "y":
       - Total quantity purchased
-      - Total sales
     client_state: ""
-    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}},{\"columnId\": \"Total sales\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"ff27105e-4196-4111-a1e1-0f49b3250200\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"69b1d14e-7046-4d83-92ea-f3460fa0435a\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total sales\"],\"isOpposite\": true}},{\"id\": \"b741df30-47c4-496e-b1ac-e88f9acc3705\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#8C62F5\"},{\"serieName\": \"Total sales\",\"color\": \"#2E75F0\"}]}"
+    client_state_v2: "{\"version\": \"V4DOT2\",\"chartProperties\": {\"responsiveLayoutPreference\": \"AUTO_ON\",\"chartSpecific\": {\"pivotSummariesState\": {}}},\"columnProperties\": [{\"columnId\": \"city\",\"columnProperty\": {}},{\"columnId\": \"Total quantity purchased\",\"columnProperty\": {}}],\"axisProperties\": [{\"id\": \"f6cb08c3-26c5-4d58-a6ef-e2211d76aa10\",\"properties\": {\"axisType\": \"Y\",\"linkedColumns\": [\"Total quantity purchased\"],\"isOpposite\": false}},{\"id\": \"6a79be6a-9ee8-4d07-abf8-88e6877dc68b\",\"properties\": {\"axisType\": \"X\",\"linkedColumns\": [\"city\"]}}],\"systemSeriesColors\": [{\"serieName\": \"Total quantity purchased\",\"color\": \"#8C62F5\"}]}"
   display_mode: CHART_MODE
